@@ -1,0 +1,5 @@
+from erictransformer.validator.tasks.chat_validator import CHATValidator
+from erictransformer.validator.tasks.gen_validator import GENValidator
+from erictransformer.validator.tasks.task_validator import TaskValidator
+from erictransformer.validator.tasks.tc_validator import TCValidator
+from erictransformer.validator.tasks.tt_validator import TTValidator

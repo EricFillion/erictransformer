@@ -1,0 +1,20 @@
+global-exclude *
+
+recursive-include erictransformer *.py
+
+include pyproject.toml
+include README.md
+include LICENSE*
+
+prune data
+prune docs
+prune examples
+prune eric_transformer
+prune eric-search
+prune tests
+
+exclude .gitignore
+exclude main.py
+exclude main_2.py
+exclude main_3.py
+

@@ -1,0 +1,57 @@
+[project]
+name = "erictransformer"
+version = "0.0.1"
+description = "Local fine-tuning, pre-training and inference for LLMs"
+readme = "README.md"
+license = { text = "Apache 2.0" }
+
+keywords = [
+    "transformer",
+    "fine-tuning",
+    "pretraining",
+    "training",
+    "AI",
+    "LLM",
+    "deep-learning",
+    "generative-ai"
+]
+
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+    "torch>=2.2",
+    "tqdm>=4.66.3",
+    "transformers>=4.57.3, <5.0.0",
+    "huggingface-hub >= 0.34.0, < 1.0",
+    "datasets>=4.0.0, <5.0.0",
+    "sentencepiece",
+    "protobuf",
+    "tokenizers>=0.22.0,<0.23.0",
+    "matplotlib>=3.9.0,<4.0.0",
+    "numpy>=2.0.0,<3.0.0",
+    "sentence-transformers>=5.0.0, <6.0.0",
+    "mlx-lm==0.29.1; platform_system == 'Darwin' and platform_machine == 'arm64'",
+    "ericsearch<1.0.0"
+
+]
+
+[project.urls]
+Repository = "https://github.com/EricFillion/erictransformer"
+
+[tool.setuptools.packages.find]
+include = ["erictransformer"]
+exclude = ["erictransformer.tests", "tests", "tests.*"]
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
