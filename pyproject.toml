@@ -1,6 +1,6 @@
 [project]
 name = "erictransformer"
-version = "0.0.1"
+version = "0.0.2"
 description = "Local fine-tuning, pre-training and inference for LLMs"
 readme = "README.md"
 license = { text = "Apache 2.0" }
