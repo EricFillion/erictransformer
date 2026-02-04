@@ -1,13 +1,21 @@
 
 ## Initialization
 
-1. model_name (string) ("mlx-community/SmolLM3-3B-4bit").  Provide a string that contains a Hugging Face ID or a path to a model directory. We recommend you provide a model that has already converted to MLX.
+1. model_name (string) ("EricFillion/smollm3-3b-mlx").  Provide a string that contains a Hugging Face ID or a path to a model directory. We recommend you provide a model that has already converted to MLX.
 
 ```python
 from erictransformer import EricChatMLX
 
-eric_gen = EricChatMLX(model_name="mlx-community/SmolLM3-3B-4bit")
+eric_chat = EricChatMLX(model_name="EricFillion/smollm3-3b-mlx")
 ```
+
+| Recommended Models                                                                  |
+|-------------------------------------------------------------------------------------|
+| [EricFillion/smollm3-3b-mlx](https://huggingface.co/EricFillion/smollm3-3b-mlx)     |                                                               
+| [EricFillion/gpt-oss-20b-mlx](https://huggingface.co/EricFillion/gpt-oss-20b-mlx)   |                                                             
+| [EricFillion/gpt-oss-120b-mlx](https://huggingface.co/EricFillion/gpt-oss-120b-mlx) |                                                            
+
+
 
 We recommended you use either an OpenAI GPT-OSS model or a Hugging Face SmolLM3-3B as we support their chat templates.
 
@@ -23,7 +31,7 @@ Arguments:
 
 from erictransformer import EricChatMLX, CHATCallArgs
 
-eric_chat = EricChatMLX(model_name="mlx-community/SmolLM3-3B-4bit")
+eric_chat = EricChatMLX(model_name="EricFillion/smollm3-3b-mlx")
 
 args = CHATCallArgs(  # Min/max number of tokens to produce during generation.
     min_len=1,
@@ -63,7 +71,7 @@ The stream() method contains 2 arguments:
 
 from erictransformer import EricChatMLX, CHATCallArgs
 
-eric_chat = EricChatMLX(model_name="mlx-community/SmolLM3-3B-4bit")
+eric_chat = EricChatMLX(model_name="EricFillion/smollm3-3b-mlx")
 
 args = CHATCallArgs(  # Min/max number of tokens to produce during generation.
     min_len=1,

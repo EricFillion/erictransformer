@@ -45,7 +45,7 @@ from erictransformer.utils import et_get_logger
 class EricChatMLX:
     def __init__(
         self,
-        model_name: str = "mlx-community/SmolLM3-3B-4bit",
+        model_name: str = "EricFillion/smollm3-3b-mlx",
         *,
         eric_search: Optional[EricSearch] = None,
     ):
