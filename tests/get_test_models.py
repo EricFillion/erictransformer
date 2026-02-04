@@ -16,7 +16,7 @@ CHAT_MODEL = "microsoft/DialoGPT-small"
 CHAT_MODEL_PATH = "models/chat"
 
 #### Chat MLX ####
-CHAT_MODEL_MLX = "mlx-community/SmolLM3-3B-4bit"
+CHAT_MODEL_MLX = "EricFillion/smollm3-3b-mlx"
 CHAT_MODEL_PATH_MLX = "models/chat_mlx"
 
 #### Text Generation ####
