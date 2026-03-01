@@ -1,0 +1,1 @@
+from erictransformer.eric_tasks.chat_templates.convert import map_chat_roles

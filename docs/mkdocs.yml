@@ -1,0 +1,41 @@
+site_name: Eric Transformer
+theme:
+  name: material
+  features:
+    - content.code.copy
+  logo: assets/favicon.ico
+  favicon: assets/favicon.ico
+
+extra_css:
+  - stylesheets/custom.css
+
+markdown_extensions:
+  - pymdownx.highlight:
+      linenums: false
+      anchor_linenums: false
+      pygments_lang_class: true
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - Chat:
+      - Overview: chat/index.md
+      - Train: chat/train.md
+  - Chat MLX:
+      - Overview: chat-mlx/index.md
+  - Text Generation:
+      - Overview: text-generation/index.md
+      - Train: text-generation/train.md
+  - Text-to-text:
+      - Overview: text-to-text/index.md
+      - Train: text-to-text/train.md
+  - Text Classification:
+      - Overview: text-classification/index.md
+      - Train: text-classification/train.md
+  - Misc:
+      - TrainArgs(): train-args.md
+      - EvalArgs(): eval-args.md
+      - CallArgs(): call-args.md
+      - Tokenize: tokenize.md
+      - Save Model: save.md
+      - Push to Hub: push.md
